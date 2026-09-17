@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+header {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.top-bar {
+    height: 40px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 58px;
+}
+
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.top-links a {
+    color: #111;
+    text-decoration: none;
+}
+
+.top-links a:hover {
+    color: #757575;
+}
+
+.promo-bar {
+    height: 65px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.promo-bar p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.promo-bar a {
+    color: #111;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nike-logo {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nike-logo img {
+    width: 68px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.nav-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-box {
+    width: 194px;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 13px;
+}
+
+.search-icon {
+    font-size: 27px;
+    line-height: 1;
+    transform: rotate(-20deg);
+    margin-right: 8px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.search-box:hover {
+    background-color: #eaeaea;
+}
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+.cart-btn,
+.heart-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cart-btn:hover,
+.heart-btn:hover {
+    background-color: #ebe7e7;
+}
+
+.menu-btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 50%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#carouselExampleDark {
+    width: 100%;
+}
+
+#carouselExampleDark .carousel-inner {
+    width: 100%;
+}
+
+#carouselExampleDark .carousel-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1481 / 718.93;
+    overflow: hidden;
+    background: #000;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 125%;
+    height: 125%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    display: block;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#carouselExampleDark .carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    width: 100%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+
+#carouselExampleDark .carousel-caption h3 {
+    margin: 0 0 10px;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+#carouselExampleDark .carousel-caption p {
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.caption-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.caption-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 25px;
+}
+
+.caption-buttons a:hover {
+    background: #e5e5e5;
+}
+
+.watch-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+#carouselExampleDark .carousel-control-prev,
+#carouselExampleDark .carousel-control-next {
+    position: absolute;
+    top: auto;
+    bottom: 24px;
+    width: 42px;
+    height: 42px;
+    opacity: 1;
+    z-index: 30;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+}
+
+#carouselExampleDark .carousel-control-prev {
+    left: auto;
+    right: 78px;
+}
+
+#carouselExampleDark .carousel-control-next {
+    left: auto;
+    right: 26px;
+}
+
+#carouselExampleDark .carousel-control-prev-icon,
+#carouselExampleDark .carousel-control-next-icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+}
+
+#carouselExampleDark .carousel-indicators {
+    position: absolute;
+    left: auto;
+    right: 125px;
+    bottom: 35px;
+    width: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    z-index: 25;
+}
+
+#carouselExampleDark .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    border: 0;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .top-bar {
+        display: none;
+    }
+
+    .main-nav {
+        height: 64px;
+        padding: 0 32px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+        gap: 12px;
+    }
+
+    .search-box {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background: transparent;
+        justify-content: center;
+    }
+
+    .search-box input {
+        display: none;
+    }
+
+    .search-icon {
+        margin: 0;
+    }
+
+    .heart-btn {
+        display: none;
+    }
+
+    .cart-btn {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .promo-bar {
+        height: 65px;
+    }
+
+    .hero-video {
+        width: 125%;
+        height: 125%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        height: 56px;
+        padding: 0 20px;
+    }
+
+    .nike-logo {
+        width: 60px;
+    }
+
+    .nike-logo img {
+        width: 55px;
+    }
+
+    .nav-actions {
+        gap: 4px;
+    }
+
+    .search-box,
+    .cart-btn,
+    .menu-btn,
+    .heart-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cart-btn svg,
+    .heart-btn svg,
+    .menu-btn svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .heart-btn {
+        display: none;
+    }
+
+    .cart-btn {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .promo-bar {
+        min-height: 60px;
+        height: auto;
+        padding: 9px 12px;
+        gap: 6px;
+    }
+
+    .promo-bar p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .promo-bar a {
+        font-size: 12px;
+    }
+
+    .video-container {
+        aspect-ratio: 1 / 1;
+    }
+
+    .hero-video {
+        width: 150%;
+        height: 150%;
+    }
+
+    #carouselExampleDark .carousel-caption {
+        bottom: 55px;
+    }
+
+    #carouselExampleDark .carousel-caption h3 {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    #carouselExampleDark .carousel-caption p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .caption-buttons {
+        gap: 5px;
+    }
+
+    .caption-buttons a {
+        font-size: 14px;
+        padding: 9px 20px;
+    }
+
+    .watch-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    #carouselExampleDark .carousel-control-prev,
+    #carouselExampleDark .carousel-control-next {
+        width: 36px;
+        height: 36px;
+        bottom: 18px;
+    }
+
+    #carouselExampleDark .carousel-control-prev {
+        right: 60px;
+    }
+
+    #carouselExampleDark .carousel-control-next {
+        right: 16px;
+    }
+
+    #carouselExampleDark .carousel-indicators {
+        right: 105px;
+        bottom: 27px;
+    }
+
+    #carouselExampleDark .carousel-indicators button {
+        width: 7px;
+        height: 7px;
+    }
+}
+.featured {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 28px;
+}
+
+.featured h2 {
+    margin: 0 0 26px 44px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.featured-grid a {
+    display: block;
+    width: 100%;
+}
+
+.featured-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.trending {
+    width: 100%;
+    padding: 80px 5.5% 0;
+}
+
+.trending h2 {
+    margin: 0 0 28px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trending-card {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 0.75;
+}
+
+.trending-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.trending-content {
+    position: absolute;
+    left: 40px;
+    bottom: 38px;
+    color: #fff;
+    z-index: 2;
+}
+
+.trending-content span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.trending-content p {
+    margin: 0 0 22px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.trending-content a {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #fff;
+    color: #111;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trending-content a:hover {
+    background: #e5e5e5;
+}
+.fresh-products {
+    display: flex;
+    gap: 14px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product-card {
+    flex: 0 0 calc((100% - 28px) / 3);
+    min-width: 0;
+    transition: transform 0.4s ease;
+}
+.fresh-drops {
+    width: 100%;
+    padding: 80px 3.2% 0;
+}
+
+.fresh-drops h2 {
+    margin: 0 0 28px;
+    font-size: 28px;
+    font-weight: 550;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.fresh-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.fresh-products {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.9s ease-in-out;
+}
+
+.product-card {
+    flex: 0 0 calc((100% - 28px) / 3);
+    min-width: 0;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 16px 0 4px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-card p {
+    margin: 0 0 5px;
+    color: #757575;
+    font-size: 16px;
+}
+
+.product-card strong {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fresh-prev,
+.fresh-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px;
+    height: 58px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 38px;
+    line-height: 1;
+    z-index: 5;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.fresh-prev {
+    left: -30px;
+}
+
+.fresh-next {
+    right: -30px;
+}
