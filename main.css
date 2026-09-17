@@ -910,3 +910,293 @@ header {
 .mega-column a:hover {
     color: #111;
 }
+
+@media (max-width: 1024px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .main-nav {
+        padding: 0 32px;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .mega-menu {
+        display: none !important;
+    }
+
+    .featured {
+        padding-top: 60px;
+    }
+
+    .trending {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .trending-grid {
+        gap: 14px;
+    }
+
+    .fresh-drops,
+    .sport-section {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .spotlight {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px 15px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .main-nav {
+        height: 56px;
+        padding: 0 16px;
+    }
+
+    .nike-logo {
+        width: 55px;
+    }
+
+    .nike-logo img {
+        width: 50px;
+    }
+
+    .nav-actions {
+        gap: 2px;
+    }
+
+    .search-box,
+    .cart-btn,
+    .menu-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .promo-bar {
+        min-height: 60px;
+        height: auto;
+        padding: 9px 12px;
+        gap: 6px;
+    }
+
+    .promo-bar p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .promo-bar a {
+        font-size: 11px;
+    }
+
+
+    .video-container {
+        aspect-ratio: 1 / 1;
+    }
+
+    .hero-video {
+        width: 150%;
+        height: 150%;
+    }
+
+    #carouselExampleDark .carousel-caption {
+        bottom: 55px;
+        padding: 0 15px;
+    }
+
+    #carouselExampleDark .carousel-caption h3 {
+        font-size: 30px;
+    }
+
+    #carouselExampleDark .carousel-caption p {
+        font-size: 14px;
+    }
+
+
+    .featured {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .featured h2 {
+        margin-left: 20px;
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .trending {
+        padding: 50px 20px 0;
+    }
+
+    .trending h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trending-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .trending-card {
+        aspect-ratio: 0.85;
+    }
+
+    .trending-content {
+        left: 25px;
+        bottom: 25px;
+    }
+
+    .trending-content p {
+        font-size: 20px;
+    }
+
+
+    .fresh-drops {
+        padding: 50px 20px 0;
+    }
+
+    .fresh-drops h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .fresh-products {
+        gap: 10px;
+    }
+
+    .product-card {
+        flex: 0 0 calc((100% - 10px) / 2);
+    }
+
+    .product-card h3 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .product-card p {
+        font-size: 13px;
+    }
+
+    .product-card strong {
+        font-size: 14px;
+    }
+
+    .fresh-prev,
+    .fresh-next {
+        width: 42px;
+        height: 42px;
+        font-size: 28px;
+    }
+
+    .fresh-prev {
+        left: -10px;
+    }
+
+    .fresh-next {
+        right: -10px;
+    }
+
+
+    .sport-section {
+        padding: 50px 20px 0;
+    }
+
+    .sport-section h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .sport-products {
+        gap: 10px;
+    }
+
+    .sport-card {
+        width: calc((100vw - 50px) / 2);
+    }
+
+    .sport-card h3 {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .sport-prev,
+    .sport-next {
+        width: 42px;
+        height: 42px;
+        font-size: 28px;
+    }
+
+    .sport-prev {
+        left: -10px;
+    }
+
+    .sport-next {
+        right: -10px;
+    }
+
+
+    .app-banner {
+        margin-top: 50px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .app-banner img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .spotlight {
+        padding: 60px 20px 80px;
+    }
+
+    .spotlight h2 {
+        font-size: 40px;
+    }
+
+    .spotlight > p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .spotlight-grid {
+        margin-top: 55px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px 12px;
+    }
+
+    .spotlight-item img {
+        height: 50px;
+    }
+
+
+    .footer {
+        padding: 0 20px 50px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 13px;
+    }
+
+}
