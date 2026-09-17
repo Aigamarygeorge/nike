@@ -707,3 +707,86 @@ header {
 .fresh-next {
     right: -30px;
 }
+.sport-section {
+    width: 100%;
+    padding: 80px 3.2% 0;
+}
+
+.sport-section h2 {
+    margin: 0 0 28px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.sport-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.sport-viewport {
+    width: 100%;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.sport-products {
+    display: flex;
+    gap: 14px;
+    width: max-content;
+    transition: transform 1.2s ease-in-out;
+}
+
+.sport-card {
+    width: calc((100vw - 6.4vw - 42px) / 3.5);
+    flex-shrink: 0;
+}
+
+.sport-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 0.75;
+    object-fit: cover;
+}
+
+.sport-card h3 {
+    margin: 16px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sport-prev,
+.sport-next {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    width: 58px;
+    height: 58px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 38px;
+    line-height: 1;
+    z-index: 5;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.sport-prev {
+    left: -30px;
+}
+
+.sport-next {
+    right: 8px;
+}
+
+.app-banner {
+    width: 100%;
+    margin-top:60px;
+    object-fit: cover;
+}
+
+.app-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
